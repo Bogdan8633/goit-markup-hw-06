@@ -802,6 +802,9 @@ p {
     border-radius: 4px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-size: var(--secondary-font-size);
+    color: var(--primery-color);
 }
 
 .input-text:focus {
@@ -820,7 +823,7 @@ p {
 .form-input-icon {
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 12px;
     transform: translate(0, -50%);
 }
 
@@ -835,6 +838,9 @@ p {
     padding: 12px 16px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-size: var(--secondary-font-size);
+    color: var(--primery-color);
 }
 
 .comment-place:focus {
@@ -883,6 +889,10 @@ p {
 
 .agree-checkbox:checked + .checkbox-icon {
     background-image: url(../images/check.svg);
+}
+
+.agree-checkbox:focus + .checkbox-icon {
+    outline: 2px solid rgba(33, 150, 243, 1);
 }
 
 .agree-text {
